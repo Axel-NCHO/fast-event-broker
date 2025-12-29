@@ -15,7 +15,7 @@ import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * Benchmark of mesh.core.EventRouter. Dispatching 1M events from several publishers to several
+ * Benchmark of EventRouter. Dispatching 4M events from several publishers to several
  * subscribers.
  */
 public class EventRouterBenchmark {
