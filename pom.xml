@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kylontech</groupId>
+    <artifactId>fast-event-broker</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <scm>
+        <connection>scm:git:git://github.com/Axel-NCHO/fast-event-broker.git</connection>
+        <url>https://github.com/Axel-NCHO/fast-event-broker</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>axel-n-cho</id>
+            <name>Project Maintainer</name>
+            <email>naxelamour09@gmail.com</email>
+            <organization>com.kylontech</organization>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/Axel-NCHO/fast-event-broker/issues</url>
+    </issueManagement>
+
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>26.0.2-1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>6.0.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
