@@ -21,9 +21,7 @@ jobs:
         with:
           distribution: 'corretto'
           java-version: '25'
-
-      - name: Install Maven
-        run: apt update && apt-get install -y maven
+          cache: 'maven'
 
       - name: Test
         run: mvn -B verify
