@@ -2,7 +2,6 @@ package com.kylontech.experiment.events;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -48,8 +47,4 @@ public class EventRegistry {
         return this.scopes.containsKey(type);
     }
 
-    @NotNull
-    public Map<String, Scope> getEventTypes() {
-        return Map.copyOf(this.scopes);
-    }
 }

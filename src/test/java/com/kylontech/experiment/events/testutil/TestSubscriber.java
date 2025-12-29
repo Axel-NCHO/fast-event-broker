@@ -30,19 +30,6 @@ public class TestSubscriber extends Subscriber {
     }
 
     /**
-     * Subscriber with scope SCOPE_FEDERATED.
-     */
-    @NotNull
-    public static TestSubscriber createFederated() {
-        return new TestSubscriber() {
-            @Override
-            public @NotNull Scope scope() {
-                return Scope.SCOPE_FEDERATED;
-            }
-        };
-    }
-
-    /**
      * Subscriber with scope SCOPE_PRIVATE.
      */
     @NotNull
